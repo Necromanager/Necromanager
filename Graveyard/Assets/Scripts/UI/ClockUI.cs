@@ -79,7 +79,7 @@ public class ClockUI : UIElement
 			GlobalValues.PassTime(0,1);
 		}
 
-		Debug.Log("Hours:" + GlobalValues.hour + " StartTime:" + GlobalValues.getStartHour());
+		//Debug.Log("Hours:" + GlobalValues.hour + " StartTime:" + GlobalValues.getStartHour());
 
 		if(chimes[GlobalValues.hour])
 		{

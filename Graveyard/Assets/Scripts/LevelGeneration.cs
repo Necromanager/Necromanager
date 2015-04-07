@@ -17,6 +17,7 @@ public class LevelGeneration : MonoBehaviour
 	[SerializeField] private DifficultyValues numZombies;
 	
 	[SerializeField] private int housesPerSide;
+	[SerializeField] private int treesPerSide;
 	//[SerializeField] private int gravesSmall;
 	//[SerializeField] private int gravesNormal;
 	//[SerializeField] private int gravesLarge;
@@ -27,7 +28,7 @@ public class LevelGeneration : MonoBehaviour
 	//[SerializeField] private List<int> maxGraves;
 	
 	private List<string> usedRooms;
-	private List<Bounds> allHouseBounds;
+	private List<Bounds> allSceneryBounds;
 	private Object[] rooms;
 	private int numRooms;
 	private int maxGraves;
@@ -102,8 +103,12 @@ public class LevelGeneration : MonoBehaviour
 		CreateWalls();
 		CreateGround();
 		//FillGraves();
+		allSceneryBounds = new List<Bounds>();
 		CreateHouses();
+		CreateTrees();
 		
+		GlobalValues.upperBounds = upperBounds;
+		GlobalValues.lowerBounds = lowerBounds;
 		Debug.Log("End:");
 		Debug.Log("Upper: "+upperBounds.x+" "+upperBounds.y);
 		Debug.Log("Lower: "+lowerBounds.x+" "+lowerBounds.y);
@@ -223,6 +228,32 @@ public class LevelGeneration : MonoBehaviour
 		ground.transform.position = new Vector3(0,.49f,0);
 	}
 	
+	private void CreateTrees()
+	{
+		Object[] trees = Resources.LoadAll("FinalAssets/Trees");
+		/*Object[] trees = new Object[2];
+		trees[0] = Resources.Load("FinalAssets/Trees/Tree1") as Object;
+		trees[1] = Resources.Load("FinalAssets/Trees/Tree2") as Object;*/
+		int i;
+		
+		for (i=0; i<treesPerSide; i++)
+		{
+			PlaceScenery(Direction.UP, trees, 0.5f, Random.Range(1f, 10f));
+		}
+		for (i=0; i<treesPerSide; i++)
+		{
+			PlaceScenery(Direction.DOWN, trees, 0.5f, Random.Range(1f, 10f));
+		}
+		for (i=0; i<treesPerSide; i++)
+		{
+			PlaceScenery(Direction.LEFT, trees, 0.5f, Random.Range(1f, 10f));
+		}
+		for (i=0; i<treesPerSide; i++)
+		{
+			PlaceScenery(Direction.RIGHT, trees, 0.5f, Random.Range(1f, 10f));
+		}
+	}
+	
 	private void CreateHouses()
 	{
 		//Placeholder.  Fix later
@@ -231,11 +262,10 @@ public class LevelGeneration : MonoBehaviour
 		//--------------------------
 		Object[] houses = Resources.LoadAll("FinalAssets/Houses");
 		int i;
-		allHouseBounds = new List<Bounds>();
 		
 		for (i=0; i<housesPerSide; i++)
 		{
-			PlaceHouse(Direction.UP, houses);
+			PlaceScenery(Direction.UP, houses, 0.5f, 10);
 		}
 		/*for (i=0; i<housesPerSide; i++)
 		{
@@ -243,29 +273,26 @@ public class LevelGeneration : MonoBehaviour
 		}*/
 		for (i=0; i<housesPerSide; i++)
 		{
-			PlaceHouse(Direction.LEFT, houses);
+			PlaceScenery(Direction.LEFT, houses, 0.5f, 10);
 		}
 		for (i=0; i<housesPerSide; i++)
 		{
-			PlaceHouse(Direction.RIGHT, houses);
+			PlaceScenery(Direction.RIGHT, houses, 0.5f, 10);
 		}
 	}
 	
-	private void PlaceHouse(Direction dir, Object[] houses)
+	private void PlaceScenery(Direction dir, Object[] objects, float height, float distance)
 	{
 		Bounds hb;
-		GameObject house;
-		float houseDistance = 7.0f;	
+		GameObject scenery;
 		int maxAttempts = 99;
 		int attempts = 0;
 		bool keepTrying = true;
 		float spawnX;
-		float spawnY = 0.5f;
+		float spawnY = height;
 		float spawnZ;
-		//attempts = 0;
-		//keepTrying = true;
 		
-		house = GameObject.Instantiate(houses[Random.Range(0, houses.Length)]) as GameObject;
+		scenery = GameObject.Instantiate(objects[Random.Range(0, objects.Length)]) as GameObject;
 		
 		while(keepTrying)
 		{
@@ -274,55 +301,31 @@ public class LevelGeneration : MonoBehaviour
 			if (dir == Direction.UP)
 			{
 				spawnX = Random.Range(lowerBounds.x, upperBounds.x);
-				spawnZ = upperBounds.y + (hb.extents.z + houseDistance);
+				spawnZ = upperBounds.y + (hb.extents.z + distance);
 			}
 			else if (dir == Direction.DOWN)
 			{
 				spawnX = Random.Range(lowerBounds.x, upperBounds.x);
-				spawnZ = lowerBounds.y - (hb.extents.z + houseDistance);
+				spawnZ = lowerBounds.y - (hb.extents.z + distance);
 			}
 			else if (dir == Direction.LEFT)
 			{
-				spawnX = lowerBounds.x - (hb.extents.x + houseDistance);
+				spawnX = lowerBounds.x - (hb.extents.x + distance);
 				spawnZ = Random.Range(lowerBounds.y, upperBounds.y);
 			}
 			else
 			{
-				spawnX = upperBounds.x + (hb.extents.x + houseDistance);
+				spawnX = upperBounds.x + (hb.extents.x + distance);
 				spawnZ = Random.Range(lowerBounds.y, upperBounds.y);
 			}
-			/*if (Random.Range(0f,1f) > 0.4f)
-			{
-				if (Random.Range(0f,1f) > 0.4f)
-				{
-					spawnX = upperBounds.x + (hb.extents.x + houseDistance);
-				}
-				else
-				{
-					spawnX = lowerBounds.x - (hb.extents.x + houseDistance);
-				}
-				spawnZ = Random.Range(lowerBounds.y, upperBounds.y);
-			}
-			else
-			{
-				spawnX = Random.Range(lowerBounds.x, upperBounds.x);
-				if (Random.Range(0f,1f) > 0.4f)
-				{	
-					spawnZ = upperBounds.y + (hb.extents.z + houseDistance);
-				}
-				else
-				{
-					spawnZ = lowerBounds.y - (hb.extents.z + houseDistance);
-				}
-			}*/
-			house.transform.position = new Vector3(spawnX, spawnY, spawnZ);
-			hb = house.GetComponent<BoxCollider>().bounds;
-			foreach(Bounds ob in allHouseBounds)
+			scenery.transform.position = new Vector3(spawnX, spawnY, spawnZ);
+			hb = scenery.GetComponent<BoxCollider>().bounds;
+			foreach(Bounds ob in allSceneryBounds)
 			{
 				if (hb.Intersects(ob))
 				{
 					keepTrying = true;
-					Destroy (house);
+					Destroy (scenery);
 					break;
 				}
 			}
@@ -337,8 +340,8 @@ public class LevelGeneration : MonoBehaviour
 			}
 			else
 			{
-				Bounds newBound = house.GetComponent<BoxCollider>().bounds;
-				allHouseBounds.Add(newBound);
+				Bounds newBound = scenery.GetComponent<BoxCollider>().bounds;
+				allSceneryBounds.Add(newBound);
 			}
 		}
 	}

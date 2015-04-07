@@ -69,6 +69,17 @@ public class SelectorCamera : CameraScript
 		float xDiff = xMovement*CAMERA_MOVE_SPEED;
 		float zDiff = zMovement*CAMERA_MOVE_SPEED;
 		
+		if ((pos.x+xDiff > GlobalValues.upperBounds.x) ||
+			(pos.x+xDiff < GlobalValues.lowerBounds.x))
+		{
+			xDiff = 0;
+		}
+		if ((pos.z+zDiff > GlobalValues.upperBounds.y) ||
+		    (pos.z+zDiff < GlobalValues.lowerBounds.y))
+		{
+			zDiff = 0;
+		}
+		
 		transform.position = new Vector3(pos.x+xDiff,pos.y,pos.z+zDiff);
 	}
 	

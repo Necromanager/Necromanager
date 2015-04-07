@@ -149,7 +149,6 @@ public abstract class Item
 	public void SetCooldown(float percent)
 	{
 		curCooldown = cooldownTime*percent;
-		Debug.Log ("Cooldown set to: " + curCooldown);
 	}
 	
 	public bool CanUse()

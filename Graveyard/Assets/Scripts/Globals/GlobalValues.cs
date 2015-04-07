@@ -44,6 +44,9 @@ public class GlobalValues : MonoBehaviour
 	
 	private static int minutesPassed = 0;
 	
+	public static Vector2 upperBounds;
+	public static Vector2 lowerBounds;
+	
 	public static float GetWaveTime()
 	{
 		return Random.Range(minWaveTime.getVal(size, difficulty), maxWaveTime.getVal(size, difficulty));

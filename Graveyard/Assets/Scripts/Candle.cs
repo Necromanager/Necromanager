@@ -60,7 +60,7 @@ public class Candle : MonoBehaviour
 
 			if (smokeParticles != null && activated)
 			{
-				Debug.Log ( "smoke: " + (smokeParticles == null) );
+				//Debug.Log ( "smoke: " + (smokeParticles == null) );
 				smokeParticles.Stop();
 				smokeParticles.Play();
 			}
