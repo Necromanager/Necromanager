@@ -31,7 +31,7 @@ public class SpotlightBuilding : Building
 	private bool GetEnoughSpotlights()
 	{
 		GameObject[] spotlights = GameObject.FindGameObjectsWithTag("Spotlight");
-		
+
 		return spotlights.Length < 1;
 	}
 
