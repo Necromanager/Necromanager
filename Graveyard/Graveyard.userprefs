@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Tutorial\TutorialCollider.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UI\MoneyUI.cs">
     <Files>
-      <File FileName="Assets\Scripts\Tutorial\TutorialManager.cs" Line="20" Column="27" />
-      <File FileName="Assets\Scripts\Player\PlayerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Tutorial\MoveObjective.cs" Line="10" Column="7" />
-      <File FileName="Assets\Scripts\Tutorial\TutorialCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ZombieScripts\ZombieScript.cs" Line="281" Column="58" />
+      <File FileName="Assets\Scripts\StateMachine\MainGameState.cs" Line="179" Column="47" />
+      <File FileName="Assets\Scripts\Grave.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UI\MoneyUI.cs" Line="29" Column="3" />
+      <File FileName="Assets\Scripts\UI\ClockUI.cs" Line="82" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -189,11 +189,13 @@
      <Compile Include="Assets\Scripts\UI\ClockUI.cs" />
      <Compile Include="Assets\Scripts\UI\DemoVideo.cs" />
      <Compile Include="Assets\Scripts\UI\DifficultyLRToggle.cs" />
+     <Compile Include="Assets\Scripts\UI\FlyingMoneyText.cs" />
      <Compile Include="Assets\Scripts\UI\InventoryUI.cs" />
      <Compile Include="Assets\Scripts\UI\LRToggle.cs" />
      <Compile Include="Assets\Scripts\UI\MoneyUI.cs" />
      <Compile Include="Assets\Scripts\UI\MusicLRToggle.cs" />
      <Compile Include="Assets\Scripts\UI\NightUI.cs" />
+     <Compile Include="Assets\Scripts\UI\SadMoneyText.cs" />
      <Compile Include="Assets\Scripts\UI\SizeLRToggle.cs" />
      <Compile Include="Assets\Scripts\UI\SoundLRToggle.cs" />
      <Compile Include="Assets\Scripts\UI\TutorialLRToggle.cs" />

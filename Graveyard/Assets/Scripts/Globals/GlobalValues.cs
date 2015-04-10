@@ -158,7 +158,7 @@ public class GlobalValues : MonoBehaviour
 	{
 		money += newMoney;
 	}
-	
+
 	public static void SpendMoney(float cost)
 	{
 		money -= cost;

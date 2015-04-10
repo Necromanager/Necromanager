@@ -348,6 +348,8 @@ public class Grave : MonoBehaviour
 		PlayBurySound();
 		
 		GlobalValues.AddMoney(GlobalValues.returnMoney);
+		MoneyUI.spawnMoneyText (transform.position, GlobalValues.returnMoney);
+
 		
 		UpdateCandles ();
 		CreateDust();
