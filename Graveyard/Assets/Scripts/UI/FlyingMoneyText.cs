@@ -8,7 +8,7 @@ public class FlyingMoneyText : MonoBehaviour {
 	RectTransform rt;
 	Text t;
 
-	float money = 0;
+	//float money = 0;
 
 	Color positive = Color.green;
 	Color negative = Color.red;
@@ -26,7 +26,7 @@ public class FlyingMoneyText : MonoBehaviour {
 	public void init(Vector3 targ, float m)
 	{
 		target = targ;
-		money = m;
+		//money = m;
 
 		if (m > 0)
 			t.color = positive;

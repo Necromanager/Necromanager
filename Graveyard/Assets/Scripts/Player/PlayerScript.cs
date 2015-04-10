@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
 	private List<Grave> targetedGraves;
 	
 	private Vector3 startPos;
-	private Quaternion startRot;
+	//private Quaternion startRot;
 
 
 	void Awake () 
@@ -70,7 +70,7 @@ public class PlayerScript : MonoBehaviour
         characterModel = animator3D.gameObject;
         
         startPos = transform.position;
-        startRot = transform.rotation;
+        //startRot = transform.rotation;
 
 		//animator.transform.localScale = new Vector3(-1,.0f,0);
 	}
@@ -177,7 +177,7 @@ public class PlayerScript : MonoBehaviour
 	{
         if (holdingZombie)
         {
-            Vector3 pos = transform.position;
+            //Vector3 pos = transform.position;
             //grabbedZombie.SetPosition(new Vector3(pos.x, pos.y + 1.5f, pos.z));
 			//grabbedZombie.transform.position = new Vector3(pos.x, pos.y + 1.5f, pos.z);
 			if (grabbedZombie != null)

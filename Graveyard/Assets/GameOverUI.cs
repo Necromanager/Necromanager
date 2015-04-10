@@ -3,9 +3,12 @@ using System.Collections;
 
 public class GameOverUI : NewMenu {
 
+	ResultsScreen results;
+
 	public override void Awake()
 	{
 		base.Awake ();
+		results = GetComponentInChildren<ResultsScreen> ();
 	}
 	public void loadScene(int scene)
 	{

@@ -212,6 +212,7 @@ public class Selector : MonoBehaviour
 			}*/
 		
 			GlobalValues.SpendMoney(currentBuilding.GetCost());
+			Results.moneySpent += currentBuilding.GetCost();
 			GlobalFunctions.PlaySoundEffect(currentBuilding.GetBuildSound());
 			CheckSpaceOpen();
 			SetColor();
@@ -227,7 +228,7 @@ public class Selector : MonoBehaviour
 		if (CheckCanRemove())
 		{
 			GlobalValues.AddMoney(currentTile.GetBuildingCost());
-			
+			Results.moneySpent -= currentBuilding.GetCost();
 			currentTile.RemoveBuilding();
 			currentTile.SetOpen(true);
 			

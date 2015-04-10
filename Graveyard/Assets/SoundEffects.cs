@@ -50,6 +50,10 @@ public class SoundEffects : MonoBehaviour {
 	public List<AudioClip> zombiePain;
 	public List<AudioClip> zombieGroan;
 	public AudioClip zombiePickUp;
+	public List<AudioClip> omnomnom;
+	public AudioClip finishBrain;
+
+
 
 	static bool hasRun = false;
 
@@ -104,6 +108,9 @@ public class SoundEffects : MonoBehaviour {
 			SoundEffectLibrary.zombiePain = zombiePain;
 			SoundEffectLibrary.zombieGroan = zombieGroan;
 			SoundEffectLibrary.zombiePickUp = zombiePickUp;
+			SoundEffectLibrary.omnomnom =  new List<AudioClip>(omnomnom);
+			SoundEffectLibrary.finishBrain = finishBrain;
+
 
 			hasRun = true;
 		}

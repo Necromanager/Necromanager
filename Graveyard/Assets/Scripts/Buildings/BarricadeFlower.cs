@@ -6,9 +6,9 @@ public class BarricadeFlower : MonoBehaviour {
     private ParticleSystem particles;
 
 	void Start () {
-        Object[] flowerTexs = Resources.LoadAll("Textures/Flowers/");
+        //Object[] flowerTexs = Resources.LoadAll("Textures/Flowers/");
 
-        Renderer rendererComp = GetComponent<Renderer>();
+        //Renderer rendererComp = GetComponent<Renderer>();
 
         //rendererComp.material.mainTexture = flowerTexs[Random.Range(0, flowerTexs.Length)] as Texture;
 

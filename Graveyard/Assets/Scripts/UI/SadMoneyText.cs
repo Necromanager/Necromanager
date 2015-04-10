@@ -7,7 +7,7 @@ public class SadMoneyText : MonoBehaviour {
 	RectTransform rt;
 	Text t;
 	
-	float money = 0;
+//	float money = 0;
 	float alpha = 2f;
 
 	Color positive = Color.green;
@@ -21,7 +21,7 @@ public class SadMoneyText : MonoBehaviour {
 	
 	public void init(float m)
 	{
-		money = m;
+	//	money = m;
 		
 		if (m > 0)
 			t.color = positive;
