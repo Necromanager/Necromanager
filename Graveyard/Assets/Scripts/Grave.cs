@@ -312,7 +312,7 @@ public class Grave : MonoBehaviour
 	{
 		GameObject dust = GameObject.Instantiate(Resources.Load("Prefabs/ParticleEffects/GraveDust")) as GameObject;
 		Vector3 dustSpawnPos = new Vector3(pos.x,1.5f,pos.z-0.5f);
-		Debug.Log ("Spawned dust");
+		//Debug.Log ("Spawned dust");
 		
 		dust.transform.position = dustSpawnPos;
 	}

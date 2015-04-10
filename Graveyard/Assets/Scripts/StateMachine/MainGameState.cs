@@ -90,6 +90,12 @@ public class MainGameState : GameState
 		StartWave();
 		
 		GlobalValues.inGame = true;
+		
+		GameObject[] floors = GameObject.FindGameObjectsWithTag("Floor");
+		foreach(GameObject floor in floors)
+		{
+			floor.GetComponent<Tile>().DevalueBuilding();
+		}
 		//Debug.Log("Done with init");
 	}
 	

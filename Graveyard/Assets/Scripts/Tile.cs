@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class Tile : MonoBehaviour 
 {
+	private const int DEVALUE_NIGHTS = 1;
+	private const float DEVALUE_PERCENT = 0.75f;
+
 	private List<Tile> neighbors;
 	private List<Tile> adjacent;
 	
@@ -17,6 +20,7 @@ public class Tile : MonoBehaviour
 	private bool hasBuilding;
 	private GameObject building;
 	private float buildingCost;
+	private int buildingNights;
 
 	void Start () 
 	{
@@ -26,6 +30,7 @@ public class Tile : MonoBehaviour
 		hasBuilding = false;
 		building = null;
 		buildingCost = 0;
+		buildingNights = 0;
 		CreateGrass();
 		//open = CheckOpen();
 	}
@@ -174,16 +179,32 @@ public class Tile : MonoBehaviour
 		hasBuilding = isBuilding;
 	}
 	
+	public void DevalueBuilding()
+	{
+		if (hasBuilding)
+		{
+			buildingNights++;
+		}
+	}
+	
 	public void AddBuilding(GameObject newBuilding, float newCost)
 	{
 		building = newBuilding;
 		buildingCost = newCost;
+		buildingNights = 0;
 		//newBuilding.GetComponent<Building>().SetAttachedTile(this);
 		hasBuilding = true;
 	}
 	
 	public float GetBuildingCost()
 	{
+		if (buildingNights >= DEVALUE_NIGHTS)
+		{
+			float newCost = Mathf.Round((buildingCost * DEVALUE_PERCENT) * 1000f)/1000f;
+			Debug.Log(newCost);
+			return newCost;
+		}
+		
 		return buildingCost;
 	}
 	

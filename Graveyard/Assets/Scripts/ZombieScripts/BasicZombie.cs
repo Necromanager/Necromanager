@@ -107,8 +107,9 @@ public class BasicZombie : ZombieScript
 			{
 				if (ob.tag == "Floor")
 				{
-					List<Tile> brainTiles = ob.gameObject.GetComponent<Tile>().GetNeighbors();
-					return brainTiles[Random.Range(0,brainTiles.Count)];
+					/*List<Tile> brainTiles = ob.gameObject.GetComponent<Tile>().GetNeighbors();
+					return brainTiles[Random.Range(0,brainTiles.Count)];*/
+					return ob.gameObject.GetComponent<Tile>();
 				}
 			}
 		}

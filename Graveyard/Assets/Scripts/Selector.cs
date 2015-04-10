@@ -196,7 +196,6 @@ public class Selector : MonoBehaviour
 	
 	private void PlaceBuilding()
 	{
-		Debug.Log ("Attempting to build");
 		bool enoughMoney = GlobalValues.CanSpendMoney(currentBuilding.GetCost());
 		CheckSpaceOpen();
 		if (spaceOpen && enoughMoney)
@@ -216,7 +215,6 @@ public class Selector : MonoBehaviour
 			GlobalFunctions.PlaySoundEffect(currentBuilding.GetBuildSound());
 			CheckSpaceOpen();
 			SetColor();
-			Debug.Log("Build Successful");
 		}
 		else
 		{
@@ -226,7 +224,6 @@ public class Selector : MonoBehaviour
 	
 	private void RemoveBuilding()
 	{
-		Debug.Log ("Attempting to remove");
 		if (CheckCanRemove())
 		{
 			GlobalValues.AddMoney(currentTile.GetBuildingCost());
@@ -242,7 +239,6 @@ public class Selector : MonoBehaviour
 			CheckSpaceOpen();
 			SetColor();
 			GlobalFunctions.PlaySoundEffect(SoundEffectLibrary.removeBuilding);
-			Debug.Log("Removal Successful");
 		}
 	}
 	
