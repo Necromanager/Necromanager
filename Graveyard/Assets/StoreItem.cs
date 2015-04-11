@@ -19,7 +19,7 @@ public class StoreItem : MonoBehaviour {
 
 	protected Image pic;
 	protected ConfirmScreen cnfrm;
-	Button myButton;
+	//Button myButton;
 
 	protected bool soldOut = false;
 
@@ -41,7 +41,7 @@ public class StoreItem : MonoBehaviour {
 	protected void init()
 	{
 		pic = GetComponent<Image> ();
-		myButton = GetComponent<Button> ();
+		//myButton = GetComponent<Button> ();
 
 		cnfrm = GameObject.FindGameObjectWithTag ("StoreDescription").GetComponent<ConfirmScreen>();
 		manager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<NewMenuManager>();
@@ -100,6 +100,7 @@ public class StoreItem : MonoBehaviour {
 		{
 			Debug.Log("Bought " + itemName);
 			GlobalValues.SpendMoney(cost);
+			Results.moneySpent += cost;
 			if(item != null)
 			{
 				PlayerScript player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();

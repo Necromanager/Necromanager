@@ -276,8 +276,11 @@ public abstract class ZombieScript : MonoBehaviour
 				escaped = true;
 				CheckZombiesGone();
 				GlobalValues.zombiesEscaped++;
+				Results.zombiesEscaped++;
 				PopUpFactory.ZombieEscapeMessage();
 				GlobalValues.AddMoney(-GlobalValues.escapeMoney);
+				Results.moneyLost += -GlobalValues.escapeMoney;
+				MoneyUI.spawnSadMoneyText(-GlobalValues.escapeMoney);
 				//Destroy (gameObject);
 			}
 			else

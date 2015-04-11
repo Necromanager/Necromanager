@@ -149,7 +149,7 @@ public class Grave : MonoBehaviour
 		//float randX, randY, randZ;
 		float yOffset = 0.2f;
 		Vector3 pos = transform.position;
-		Vector3 candlePos = new Vector3(0,0,0);
+		//Vector3 candlePos = new Vector3(0,0,0);
 		
 		candlePositions.Add(new Vector3(pos.x-0.25f, pos.y+yOffset, pos.z+0.45f));
 		candlePositions.Add(new Vector3(pos.x-0.25f, pos.y+yOffset, pos.z-0.4f));
@@ -330,6 +330,7 @@ public class Grave : MonoBehaviour
 
 	public void SpawnZombie()
 	{
+		Results.zombiesSpawned++;
 		GameObject newZombie = GameObject.Instantiate(Resources.Load("Zombies/BasicZombie")) as GameObject;
 		//GameObject newZombie = GameObject.Instantiate(Resources.Load("Zombies/Necromancer")) as GameObject;
 		Vector3 zombieSpawnPos = new Vector3(pos.x,1.5f,pos.z-0.5f);
@@ -346,8 +347,13 @@ public class Grave : MonoBehaviour
 	{
 		ChangeNumZombies(1);
 		PlayBurySound();
-		
+
+		Results.moneyEarned += GlobalValues.returnMoney;
+		Results.zombiesReturned++;
+
 		GlobalValues.AddMoney(GlobalValues.returnMoney);
+		MoneyUI.spawnMoneyText (transform.position, GlobalValues.returnMoney);
+
 		
 		UpdateCandles ();
 		CreateDust();

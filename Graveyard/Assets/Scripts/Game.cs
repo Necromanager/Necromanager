@@ -40,7 +40,8 @@ public class Game : MonoBehaviour
 		{
 			//GlobalValues.money = START_MONEY;
 			//GlobalValues.difficulty = START_DIFFICULTY;
-			GlobalValues.money = 1000;
+			Results.reset();
+			GlobalValues.money = 0;
 			GlobalValues.day = 1;
 			GlobalValues.curDiffIncrease = 0;
 			GlobalValues.wonGame = false;

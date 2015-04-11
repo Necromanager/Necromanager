@@ -306,7 +306,6 @@ public class MainGameState : GameState
 				lostGame = true;
 				gameMenu.isOpen = false;
 				dead.isOpen = true;
-				GlobalFunctions.PlaySoundEffect(SoundEffectLibrary.deathScreen);
 				return false;
 			}
 			gameMenu.isOpen = false;

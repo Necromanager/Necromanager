@@ -51,4 +51,6 @@ static public class SoundEffectLibrary
 	public static List<AudioClip> zombiePain;
 	public static List<AudioClip> zombieGroan;
 	public static AudioClip zombiePickUp;
+	public static List<AudioClip> omnomnom;
+	public static AudioClip finishBrain;
 }
