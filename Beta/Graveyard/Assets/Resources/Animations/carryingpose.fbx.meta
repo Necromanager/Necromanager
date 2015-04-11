@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 53fcda51e8c2d9440954e561e312882d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Base
+    100002: //RootNode
+    100004: Hips
+    100006: j_BallL
+    100008: j_BallR
+    100010: j_ElbowFKL
+    100012: j_ElbowFKR
+    100014: j_ElbowIKL
+    100016: j_ElbowIKR
+    100018: j_ElbowL
+    100020: j_ElbowR
+    100022: j_Face
+    100024: j_Finger1L
+    100026: j_Finger1R
+    100028: j_Finger2L
+    100030: j_Finger2R
+    100032: j_FingerBaseL
+    100034: j_FingerBaseR
+    100036: j_FingerTipL
+    100038: j_FingerTipR
+    100040: j_HeelL
+    100042: j_HeelR
+    100044: j_HipL
+    100046: j_HipR
+    100048: j_KneeL
+    100050: j_KneeR
+    100052: j_Neck
+    100054: j_Pointer1L
+    100056: j_Pointer1R
+    100058: j_Pointer2L
+    100060: j_Pointer2R
+    100062: j_PointerBaseL
+    100064: j_PointerBaseR
+    100066: j_PointerTipL
+    100068: j_PointerTipR
+    100070: j_reversefootL
+    100072: j_reversefootR
+    100074: j_RFBallL
+    100076: j_RFBallR
+    100078: j_RFHeelL
+    100080: j_RFHeelR
+    100082: j_RFToeL
+    100084: j_RFToeR
+    100086: j_ShoulderFKL
+    100088: j_ShoulderFKR
+    100090: j_ShoulderIKL
+    100092: j_ShoulderIKR
+    100094: j_ShoulderL
+    100096: j_ShoulderR
+    100098: j_Shoulders
+    100100: j_Thumb1L
+    100102: j_Thumb1R
+    100104: j_Thumb2L
+    100106: j_Thumb2R
+    100108: j_ThumbBaseL
+    100110: j_ThumbBaseR
+    100112: j_ThumbTipL
+    100114: j_ThumbTipR
+    100116: j_ToeL
+    100118: j_ToeR
+    100120: j_WristFKL
+    100122: j_WristFKR
+    100124: j_WristIKL
+    100126: j_WristIKR
+    100128: j_WristL
+    100130: j_WristR
+    100132: Model1
+    100134: Spine1
+    100136: Spine2
+    100138: Spine3
+    100140: ZeroPoint
+    400000: Base
+    400002: //RootNode
+    400004: Hips
+    400006: j_BallL
+    400008: j_BallR
+    400010: j_ElbowFKL
+    400012: j_ElbowFKR
+    400014: j_ElbowIKL
+    400016: j_ElbowIKR
+    400018: j_ElbowL
+    400020: j_ElbowR
+    400022: j_Face
+    400024: j_Finger1L
+    400026: j_Finger1R
+    400028: j_Finger2L
+    400030: j_Finger2R
+    400032: j_FingerBaseL
+    400034: j_FingerBaseR
+    400036: j_FingerTipL
+    400038: j_FingerTipR
+    400040: j_HeelL
+    400042: j_HeelR
+    400044: j_HipL
+    400046: j_HipR
+    400048: j_KneeL
+    400050: j_KneeR
+    400052: j_Neck
+    400054: j_Pointer1L
+    400056: j_Pointer1R
+    400058: j_Pointer2L
+    400060: j_Pointer2R
+    400062: j_PointerBaseL
+    400064: j_PointerBaseR
+    400066: j_PointerTipL
+    400068: j_PointerTipR
+    400070: j_reversefootL
+    400072: j_reversefootR
+    400074: j_RFBallL
+    400076: j_RFBallR
+    400078: j_RFHeelL
+    400080: j_RFHeelR
+    400082: j_RFToeL
+    400084: j_RFToeR
+    400086: j_ShoulderFKL
+    400088: j_ShoulderFKR
+    400090: j_ShoulderIKL
+    400092: j_ShoulderIKR
+    400094: j_ShoulderL
+    400096: j_ShoulderR
+    400098: j_Shoulders
+    400100: j_Thumb1L
+    400102: j_Thumb1R
+    400104: j_Thumb2L
+    400106: j_Thumb2R
+    400108: j_ThumbBaseL
+    400110: j_ThumbBaseR
+    400112: j_ThumbTipL
+    400114: j_ThumbTipR
+    400116: j_ToeL
+    400118: j_ToeR
+    400120: j_WristFKL
+    400122: j_WristFKR
+    400124: j_WristIKL
+    400126: j_WristIKR
+    400128: j_WristL
+    400130: j_WristR
+    400132: Model1
+    400134: Spine1
+    400136: Spine2
+    400138: Spine3
+    400140: ZeroPoint
+    4300000: Model1
+    7400000: Player_Carry
+    9500000: //RootNode
+    13700000: Model1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Player_Carry
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Model1
+        weight: 1
+      - path: ZeroPoint
+        weight: 1
+      - path: ZeroPoint/Base
+        weight: 1
+      - path: ZeroPoint/Base/Hips
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipL/j_KneeL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipL/j_KneeL/j_HeelL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipL/j_KneeL/j_HeelL/j_BallL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipL/j_KneeL/j_HeelL/j_BallL/j_ToeL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipR/j_KneeR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipR/j_KneeR/j_HeelR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipR/j_KneeR/j_HeelR/j_BallR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/j_HipR/j_KneeR/j_HeelR/j_BallR/j_ToeR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_Neck
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_Neck/j_Face
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderFKL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderFKL/j_ElbowFKL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderFKL/j_ElbowFKL/j_WristFKL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderFKR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderFKR/j_ElbowFKR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderFKR/j_ElbowFKR/j_WristFKR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderIKL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderIKL/j_ElbowIKL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderIKL/j_ElbowIKL/j_WristIKL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderIKR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderIKR/j_ElbowIKR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderIKR/j_ElbowIKR/j_WristIKR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_FingerBaseL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_FingerBaseL/j_Finger1L
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_FingerBaseL/j_Finger1L/j_Finger2L
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_FingerBaseL/j_Finger1L/j_Finger2L/j_FingerTipL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_PointerBaseL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_PointerBaseL/j_Pointer1L
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_PointerBaseL/j_Pointer1L/j_Pointer2L
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_PointerBaseL/j_Pointer1L/j_Pointer2L/j_PointerTipL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_ThumbBaseL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_ThumbBaseL/j_Thumb1L
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_ThumbBaseL/j_Thumb1L/j_Thumb2L
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderL/j_ElbowL/j_WristL/j_ThumbBaseL/j_Thumb1L/j_Thumb2L/j_ThumbTipL
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_FingerBaseR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_FingerBaseR/j_Finger1R
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_FingerBaseR/j_Finger1R/j_Finger2R
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_FingerBaseR/j_Finger1R/j_Finger2R/j_FingerTipR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_PointerBaseR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_PointerBaseR/j_Pointer1R
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_PointerBaseR/j_Pointer1R/j_Pointer2R
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_PointerBaseR/j_Pointer1R/j_Pointer2R/j_PointerTipR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_ThumbBaseR
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_ThumbBaseR/j_Thumb1R
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_ThumbBaseR/j_Thumb1R/j_Thumb2R
+        weight: 1
+      - path: ZeroPoint/Base/Hips/Spine1/Spine2/Spine3/j_Shoulders/j_ShoulderR/j_ElbowR/j_WristR/j_ThumbBaseR/j_Thumb1R/j_Thumb2R/j_ThumbTipR
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootL
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootL/j_RFToeL
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootL/j_RFToeL/j_RFBallL
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootL/j_RFToeL/j_RFBallL/j_RFHeelL
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootR
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootR/j_RFToeR
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootR/j_RFToeR/j_RFBallR
+        weight: 1
+      - path: ZeroPoint/Base/j_reversefootR/j_RFToeR/j_RFBallR/j_RFHeelR
+        weight: 1
+      maskType: 1
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

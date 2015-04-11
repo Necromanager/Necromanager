@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: dcdc88870098f74488d9dfca4fe8fd3c
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Jaw_End2_export_JNT
+    100002: Jaw_End_export_JNT
+    100004: Root_Transform_CTRL
+    100006: Zombie_DO_NOT_TOUCH
+    100008: //RootNode
+    100010: Zombie_hipBind_JNT
+    100012: Zombie_Left_Ball_JNT
+    100014: Zombie_Left_Foot_export_JNT
+    100016: Zombie_Left_Forearm_export_JNT
+    100018: Zombie_Left_Hand_End_export_JNT
+    100020: Zombie_Left_Hand_export_JNT
+    100022: Zombie_Left_Shin_export_JNT
+    100024: Zombie_Left_Shoulder_export_JNT
+    100026: Zombie_Left_Thigh_export_JNT
+    100028: Zombie_Left_Toe_JNT
+    100030: Zombie_Left_Upperarm_export_JNT
+    100032: Zombie_Mesh
+    100034: Zombie_Neck_base_export_JNT
+    100036: Zombie_Neck_end_export_JNT
+    100038: Zombie_Neck_mid1_export_JNT
+    100040: Zombie_Neck_mid2_export_JNT
+    100042: Zombie_Right_Ball_export_JNT
+    100044: Zombie_Right_Foot_export_JNT
+    100046: Zombie_Right_Forearm_export_JNT
+    100048: Zombie_Right_Hand_End_export_JNT
+    100050: Zombie_Right_Hand_export_JNT
+    100052: Zombie_Right_Shin_export_JNT
+    100054: Zombie_Right_Shoulder_export_JNT
+    100056: Zombie_Right_Thigh_export_JNT
+    100058: Zombie_Right_Toe_export_JNT
+    100060: Zombie_Right_Upperarm_export_JNT
+    100062: Zombie_shoulderBind_JNT
+    100064: Zombie_spine1_export_JNT
+    100066: Zombie_spine1_result_JNT
+    100068: Zombie_spine2_export_JNT
+    100070: Zombie_spine3_export_JNT
+    100072: Zombie_spine4_export_JNT
+    100074: Zombie_spine5_export_JNT
+    100076: Zombie_spine6_export_JNT
+    100078: Zombie_spine7_export_JNT
+    100080: Zombie_spineCRV
+    100082: Zombie_torso_GRP
+    400000: Jaw_End2_export_JNT
+    400002: Jaw_End_export_JNT
+    400004: Root_Transform_CTRL
+    400006: Zombie_DO_NOT_TOUCH
+    400008: //RootNode
+    400010: Zombie_hipBind_JNT
+    400012: Zombie_Left_Ball_JNT
+    400014: Zombie_Left_Foot_export_JNT
+    400016: Zombie_Left_Forearm_export_JNT
+    400018: Zombie_Left_Hand_End_export_JNT
+    400020: Zombie_Left_Hand_export_JNT
+    400022: Zombie_Left_Shin_export_JNT
+    400024: Zombie_Left_Shoulder_export_JNT
+    400026: Zombie_Left_Thigh_export_JNT
+    400028: Zombie_Left_Toe_JNT
+    400030: Zombie_Left_Upperarm_export_JNT
+    400032: Zombie_Mesh
+    400034: Zombie_Neck_base_export_JNT
+    400036: Zombie_Neck_end_export_JNT
+    400038: Zombie_Neck_mid1_export_JNT
+    400040: Zombie_Neck_mid2_export_JNT
+    400042: Zombie_Right_Ball_export_JNT
+    400044: Zombie_Right_Foot_export_JNT
+    400046: Zombie_Right_Forearm_export_JNT
+    400048: Zombie_Right_Hand_End_export_JNT
+    400050: Zombie_Right_Hand_export_JNT
+    400052: Zombie_Right_Shin_export_JNT
+    400054: Zombie_Right_Shoulder_export_JNT
+    400056: Zombie_Right_Thigh_export_JNT
+    400058: Zombie_Right_Toe_export_JNT
+    400060: Zombie_Right_Upperarm_export_JNT
+    400062: Zombie_shoulderBind_JNT
+    400064: Zombie_spine1_export_JNT
+    400066: Zombie_spine1_result_JNT
+    400068: Zombie_spine2_export_JNT
+    400070: Zombie_spine3_export_JNT
+    400072: Zombie_spine4_export_JNT
+    400074: Zombie_spine5_export_JNT
+    400076: Zombie_spine6_export_JNT
+    400078: Zombie_spine7_export_JNT
+    400080: Zombie_spineCRV
+    400082: Zombie_torso_GRP
+    4300000: Zombie_Mesh
+    7400000: ZombieGetupGrave
+    9500000: //RootNode
+    13700000: Zombie_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ZombieGetupGrave
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_Transform_CTRL
+        weight: 1
+      - path: Root_Transform_CTRL/Zombie_torso_GRP
+        weight: 1
+      - path: Root_Transform_CTRL/Zombie_torso_GRP/Zombie_DO_NOT_TOUCH
+        weight: 1
+      - path: Root_Transform_CTRL/Zombie_torso_GRP/Zombie_DO_NOT_TOUCH/Zombie_hipBind_JNT
+        weight: 1
+      - path: Root_Transform_CTRL/Zombie_torso_GRP/Zombie_DO_NOT_TOUCH/Zombie_shoulderBind_JNT
+        weight: 1
+      - path: Root_Transform_CTRL/Zombie_torso_GRP/Zombie_DO_NOT_TOUCH/Zombie_spineCRV
+        weight: 1
+      - path: Root_Transform_CTRL/Zombie_torso_GRP/Zombie_spine1_result_JNT
+        weight: 1
+      - path: Zombie_Mesh
+        weight: 1
+      - path: Zombie_spine1_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Left_Thigh_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Left_Thigh_export_JNT/Zombie_Left_Shin_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Left_Thigh_export_JNT/Zombie_Left_Shin_export_JNT/Zombie_Left_Foot_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Left_Thigh_export_JNT/Zombie_Left_Shin_export_JNT/Zombie_Left_Foot_export_JNT/Zombie_Left_Ball_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Left_Thigh_export_JNT/Zombie_Left_Shin_export_JNT/Zombie_Left_Foot_export_JNT/Zombie_Left_Ball_JNT/Zombie_Left_Toe_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Right_Thigh_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Right_Thigh_export_JNT/Zombie_Right_Shin_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Right_Thigh_export_JNT/Zombie_Right_Shin_export_JNT/Zombie_Right_Foot_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Right_Thigh_export_JNT/Zombie_Right_Shin_export_JNT/Zombie_Right_Foot_export_JNT/Zombie_Right_Ball_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_Right_Thigh_export_JNT/Zombie_Right_Shin_export_JNT/Zombie_Right_Foot_export_JNT/Zombie_Right_Ball_export_JNT/Zombie_Right_Toe_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Left_Shoulder_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Left_Shoulder_export_JNT/Zombie_Left_Upperarm_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Left_Shoulder_export_JNT/Zombie_Left_Upperarm_export_JNT/Zombie_Left_Forearm_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Left_Shoulder_export_JNT/Zombie_Left_Upperarm_export_JNT/Zombie_Left_Forearm_export_JNT/Zombie_Left_Hand_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Left_Shoulder_export_JNT/Zombie_Left_Upperarm_export_JNT/Zombie_Left_Forearm_export_JNT/Zombie_Left_Hand_export_JNT/Zombie_Left_Hand_End_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Right_Shoulder_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Right_Shoulder_export_JNT/Zombie_Right_Upperarm_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Right_Shoulder_export_JNT/Zombie_Right_Upperarm_export_JNT/Zombie_Right_Forearm_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Right_Shoulder_export_JNT/Zombie_Right_Upperarm_export_JNT/Zombie_Right_Forearm_export_JNT/Zombie_Right_Hand_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_Right_Shoulder_export_JNT/Zombie_Right_Upperarm_export_JNT/Zombie_Right_Forearm_export_JNT/Zombie_Right_Hand_export_JNT/Zombie_Right_Hand_End_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT/Zombie_Neck_base_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT/Zombie_Neck_base_export_JNT/Zombie_Neck_mid1_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT/Zombie_Neck_base_export_JNT/Zombie_Neck_mid1_export_JNT/Zombie_Neck_mid2_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT/Zombie_Neck_base_export_JNT/Zombie_Neck_mid1_export_JNT/Zombie_Neck_mid2_export_JNT/Zombie_Neck_end_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT/Zombie_Neck_base_export_JNT/Zombie_Neck_mid1_export_JNT/Zombie_Neck_mid2_export_JNT/Zombie_Neck_end_export_JNT/Jaw_End_export_JNT
+        weight: 1
+      - path: Zombie_spine1_export_JNT/Zombie_spine2_export_JNT/Zombie_spine3_export_JNT/Zombie_spine4_export_JNT/Zombie_spine5_export_JNT/Zombie_spine6_export_JNT/Zombie_spine7_export_JNT/Zombie_Neck_base_export_JNT/Zombie_Neck_mid1_export_JNT/Zombie_Neck_mid2_export_JNT/Zombie_Neck_end_export_JNT/Jaw_End_export_JNT/Jaw_End2_export_JNT
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
