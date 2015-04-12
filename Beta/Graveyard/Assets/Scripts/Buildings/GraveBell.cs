@@ -9,7 +9,7 @@ public class GraveBell : Building
 		desc = "Alerts you to escaping zombies.";
 		
 		LoadData ();
-		menuTex = Resources.Load<Sprite>("Sprites/Buildings/Bells");
+		menuTex = Resources.Load<Sprite>("Sprites/Buildings/New/BellIcon");
 		createObject = Resources.Load("Prefabs/Bell") as GameObject;
 	}
 

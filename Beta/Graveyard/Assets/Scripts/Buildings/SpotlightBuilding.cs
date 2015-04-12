@@ -9,7 +9,7 @@ public class SpotlightBuilding : Building
 		desc = "Stuns zombies indefinitely.";
 		
 		LoadData ();
-		menuTex = Resources.Load<Sprite>("Sprites/Buildings/spotlight");
+		menuTex = Resources.Load<Sprite>("Sprites/Buildings/New/SpotlightIcon");
 		createObject = Resources.Load("Prefabs/SpotLight") as GameObject;
 	}
 

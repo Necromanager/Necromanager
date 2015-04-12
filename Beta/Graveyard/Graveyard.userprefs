@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BrightnessSetting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StateMachine\MainGameState.cs">
     <Files>
-      <File FileName="Assets\Scripts\NewMenus\SplashScreen.cs" Line="42" Column="1" />
-      <File FileName="Assets\Scripts\Game.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BrightnessSetting.cs" Line="18" Column="78" />
-      <File FileName="Assets\Scripts\LevelGeneration.cs" Line="114" Column="1" />
+      <File FileName="Assets\Newspaper.cs" Line="20" Column="2" />
+      <File FileName="Assets\Scripts\StateMachine\MainGameState.cs" Line="393" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

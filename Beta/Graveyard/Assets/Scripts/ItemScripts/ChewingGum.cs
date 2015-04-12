@@ -27,7 +27,7 @@ public class ChewingGum : Item
 		itemDesc = "Stop zombies in their tracks";
 		LoadData ();
 		
-		itemPic = Resources.Load<Sprite>("Sprites/Inventory/ItemGum");
+		itemPic = Resources.Load<Sprite>("Sprites/Store/New/GumIcon");
 		storePic = Resources.Load("Textures/Items/StoreGum") as Texture;
 
 		curCooldown = cooldownTime;

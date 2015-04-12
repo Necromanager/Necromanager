@@ -40,7 +40,7 @@ public class Coffee : Item
 		itemDesc = "Get a small burst of energy";
 		LoadData ();
 		//price = 25;
-		itemPic = Resources.Load<Sprite>("Sprites/Inventory/ItemCoffee");
+		itemPic = Resources.Load<Sprite>("Sprites/Store/New/CoffeeIcon");
 		storePic = Resources.Load("Textures/Items/StoreCoffee") as Texture;
 		//cooldownTime = 40;
 		curCooldown = cooldownTime;

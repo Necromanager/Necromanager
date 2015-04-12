@@ -11,7 +11,7 @@ public class Barricade : Building
 		desc = "Blocks the zombies' path.";
 		//cost = 10;
 		LoadData ();
-		menuTex = Resources.Load<Sprite>("Sprites/Buildings/flowerBed");
+		menuTex = Resources.Load<Sprite>("Sprites/Buildings/New/FlowerIcon");
 		createObject = Resources.Load("Prefabs/Barricade") as GameObject;
 		//createObject = Resources.Load("Prefabs/Tree") as GameObject;
 		

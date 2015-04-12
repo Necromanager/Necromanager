@@ -380,7 +380,6 @@ public class MainGameState : GameState
 
 		if (activate)
 		{
-			cg.alpha = 1;
 			cg.interactable = true;
 			cg.blocksRaycasts = true;
 
@@ -388,19 +387,21 @@ public class MainGameState : GameState
 			if (pay < 0)
 			{
 				newspaper.headline.text = "Zombies Escape! Town Doomed!";
-				newspaper.picture.sprite = Resources.Load<Sprite>("Sprites/Newspaper/Character-Evil");
+				newspaper.picture.sprite = Resources.Load<Sprite>("Sprites/UI/NewspaperCharacterSad");
 				newspaper.storyPay.text = "Necromanager fined $"+Mathf.Abs(pay).ToString("F2");
+				newspaper.endNight(false);
 			}
 			else
 			{
 				newspaper.headline.text = "Zombies Contained! Town Rejoices!";
-				newspaper.picture.sprite = Resources.Load<Sprite>("Sprites/Newspaper/Character-good");
+				newspaper.picture.sprite = Resources.Load<Sprite>("Sprites/UI/NewspaperCharacterHappy");
 				newspaper.storyPay.text = "Necromanager earns $"+pay.ToString("F2");
+				newspaper.endNight(true);
 			}
 		}
 		else
 		{
-			cg.alpha = 0;
+			newspaper.toStore();
 			cg.interactable = false;
 			cg.blocksRaycasts = false;
 		}

@@ -20,7 +20,7 @@ public class PickAxe : Item
 		soundPath = "miss";
 		LoadData ();
 		//price = 100;
-		itemPic = Resources.Load<Sprite>("Sprites/Inventory/ItemPickAxe");
+		itemPic = Resources.Load<Sprite>("Sprites/Store/New/PickAxeIcon");
 		storePic = Resources.Load("Textures/Items/StorePickAxe") as Texture;
 		//cooldownTime = 100;
 		//maxCooldown = 5;

@@ -27,7 +27,7 @@ public class ScreamBox : Item
 		itemDesc = "Attract nearby zombies";
 		LoadData ();
 		
-		itemPic = Resources.Load<Sprite>("Sprites/Inventory/ItemScreamBox");
+		itemPic = Resources.Load<Sprite>("Sprites/Store/New/ScreamBoxIcon");
 		storePic = Resources.Load("Textures/Items/StoreGum") as Texture;
 		
 		curCooldown = cooldownTime;

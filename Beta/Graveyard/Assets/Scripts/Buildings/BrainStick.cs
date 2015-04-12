@@ -9,7 +9,7 @@ public class BrainStick : Building
 		desc = "Draws in nearby zombies.";
 		//cost = 50;
 		LoadData ();
-		menuTex = Resources.Load<Sprite>("Sprites/Buildings/brainStick");
+		menuTex = Resources.Load<Sprite>("Sprites/Buildings/New/BrainIcon");
 		createObject = Resources.Load("Prefabs/BrainStick") as GameObject;
 	}
 

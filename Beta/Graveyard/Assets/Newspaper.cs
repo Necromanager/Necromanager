@@ -10,13 +10,38 @@ public class Newspaper : MonoBehaviour
 	[SerializeField] public Text storyPay;
 	[SerializeField] public Image picture;
 
-	// Use this for initialization
-	void Start () {
-	
+	Animator anim;
+
+	void Start()
+	{
+		anim = GetComponent<Animator> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void endNight(bool goodNight)
+	{
+		if(goodNight)
+		{
+			anim.SetTrigger("GoodNight");
+		}
+		else
+		{
+			anim.SetTrigger("BadNight");
+		}
+	}
+
+	public void toStore()
+	{
+		anim.SetTrigger("ToStore");
+	}
+
+
+	public void playThud()
+	{
+		GlobalFunctions.PlaySoundEffect ("Sounds/Effects/Thud");
+	}
+
+	public void playWhoosh()
+	{
+		GlobalFunctions.PlaySoundEffect ("Sounds/Effects/Miss");
 	}
 }

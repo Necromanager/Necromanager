@@ -16,7 +16,7 @@ public class NoItem : Item
 		itemName = "N/A";
 		itemDesc = "N/A";
 		price = 0;
-		itemPic = Resources.Load<Sprite>("Sprites/Inventory/ItemEmpty");
+		itemPic = Resources.Load<Sprite>("Sprites/BlankPixel");
 		storePic = Resources.Load("Textures/Items/StoreSoldOut") as Texture;
 		cooldownTime = 1;
 		curCooldown = cooldownTime;

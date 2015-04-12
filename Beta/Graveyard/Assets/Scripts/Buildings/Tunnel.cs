@@ -9,7 +9,7 @@ public class Tunnel : Building
 		desc = "Create a shortcut. Needs two tunnels to work.";
 		
 		LoadData ();
-		menuTex = Resources.Load<Sprite>("Sprites/Buildings/tunnel");
+		menuTex = Resources.Load<Sprite>("Sprites/Buildings/New/TunnelIcon");
 		createObject = Resources.Load("Prefabs/Tunnel") as GameObject;
 	}
 	

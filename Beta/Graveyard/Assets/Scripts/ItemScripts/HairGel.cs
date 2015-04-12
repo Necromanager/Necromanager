@@ -35,7 +35,7 @@ public class HairGel : Item
 		itemDesc = "Trip up zombies";
 		LoadData ();
 		
-		itemPic = Resources.Load<Sprite>("Sprites/Inventory/ItemHairGel");
+		itemPic = Resources.Load<Sprite>("Sprites/Store/New/HairGelIcon");
 		storePic = Resources.Load("Textures/Items/StoreHairGel") as Texture;
 		
 		createdGel = new List<GameObject>();

@@ -14,12 +14,12 @@ public class BuildUIElement : MonoBehaviour {
 	Text myText;
 	[SerializeField]
 	Image myPic;
+	[SerializeField]
+	Image myBG;
 
 	void Awake()
 	{
 		myText = GetComponentInChildren<Text> ();
-		myPic = GetComponentInChildren<Image> ();
-
 		selector = GameObject.FindGameObjectWithTag ("Selector").GetComponent<Selector>();
 
 		switch (ID)
@@ -52,6 +52,7 @@ public class BuildUIElement : MonoBehaviour {
 
 	public void setColor(Color c)
 	{
+		myBG.color = c;
 		myPic.color = c;
 	}
 

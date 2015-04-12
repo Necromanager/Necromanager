@@ -17,6 +17,7 @@ public class StoreItem : MonoBehaviour {
 	protected Sprite soldOutSprite;
 	protected Sprite itemSprite;
 
+	[SerializeField]
 	protected Image pic;
 	protected ConfirmScreen cnfrm;
 	//Button myButton;
@@ -40,7 +41,7 @@ public class StoreItem : MonoBehaviour {
 
 	protected void init()
 	{
-		pic = GetComponent<Image> ();
+		//pic = GetComponentInChildren<Image> ();
 		//myButton = GetComponent<Button> ();
 
 		cnfrm = GameObject.FindGameObjectWithTag ("StoreDescription").GetComponent<ConfirmScreen>();
