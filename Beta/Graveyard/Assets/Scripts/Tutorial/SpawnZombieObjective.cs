@@ -7,7 +7,7 @@ public class SpawnZombieObjective : TutorialObjective {
 	float timesToComplete = 1;
 	
 	
-	public SpawnZombieObjective(string m, bool b) : base(m, b)
+	public SpawnZombieObjective(string m, bool b, string fp) : base(m, b, fp)
 	{
 		
 	}

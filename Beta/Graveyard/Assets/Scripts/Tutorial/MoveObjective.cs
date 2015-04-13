@@ -5,7 +5,7 @@ public class MoveObjective : TutorialObjective
 {
 	TutorialCollider col;
 
-	public MoveObjective(string m, bool b) : base(m, b)
+	public MoveObjective(string m, bool b, string fp) : base(m, b, fp)
 	{
 		col = GameObject.FindGameObjectWithTag("TutorialCollider").GetComponent<TutorialCollider>();
 	}

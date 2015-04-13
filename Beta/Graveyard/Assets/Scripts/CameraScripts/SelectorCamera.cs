@@ -11,7 +11,7 @@ public class SelectorCamera : CameraScript
 	[SerializeField] private Selector selector;
 	[SerializeField] private Camera childCamera;
 	//[SerializeField] float cameraSpeed;
-	
+
 	public override void Activate()
 	{
 		if (!this.enabled)

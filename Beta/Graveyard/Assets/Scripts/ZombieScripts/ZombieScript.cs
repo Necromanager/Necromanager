@@ -11,7 +11,7 @@ public abstract class ZombieScript : MonoBehaviour
 	protected float totalDelta;
 	protected float stunTime;
 	protected float curStunTime;
-	
+
 	protected int totalHealth;
 	protected int curHealth;
 	

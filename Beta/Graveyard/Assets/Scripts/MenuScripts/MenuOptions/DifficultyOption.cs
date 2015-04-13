@@ -6,7 +6,7 @@ public class DifficultyOption : MenuOption
 	public DifficultyOption()
 	{
 	}
-	
+
 	public override void Activate()
 	{
 		GlobalValues.IncrementDifficulty();

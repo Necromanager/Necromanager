@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BrightnessSetting : MonoBehaviour 
 {
-	[SerializeField] Light light;
+	[SerializeField] Light myLight;
 	[SerializeField] float min;
 	[SerializeField] float max;
 	[SerializeField] float speed;
@@ -17,18 +17,18 @@ public class BrightnessSetting : MonoBehaviour
 	{
 		if ((Input.GetKeyDown(KeyCode.Plus)) || (Input.GetKeyDown(KeyCode.Equals)))
 		{
-			light.intensity += speed;
-			if (light.intensity > max)
+			myLight.intensity += speed;
+			if (myLight.intensity > max)
 			{
-				light.intensity = max;
+				myLight.intensity = max;
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.Minus))
 		{
-			light.intensity -= speed;
-			if (light.intensity < min)
+			myLight.intensity -= speed;
+			if (myLight.intensity < min)
 			{
-				light.intensity = min;
+				myLight.intensity = min;
 			}
 		}
 	}

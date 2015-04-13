@@ -7,7 +7,7 @@ public class PickUpZombieObjective : TutorialObjective {
 	float timesToComplete = 1;
 	
 	
-	public PickUpZombieObjective(string m, bool b) : base(m, b)
+	public PickUpZombieObjective(string m, bool b, string fp) : base(m, b, fp)
 	{
 		
 	}

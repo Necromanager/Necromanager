@@ -16,13 +16,15 @@ public class TutorialObjective
 	protected bool big = true;
 	protected string message;
 	protected ObjectiveState state = ObjectiveState.START;
+	protected AudioClip clip;
 	
 	
-	public TutorialObjective(string m, bool shouldBeBig)
+	public TutorialObjective(string m, bool shouldBeBig, string clipPath)
 	{
 		attatchMyEvents();
 		message = m;
 		big = shouldBeBig;
+		clip = Resources.Load<AudioClip>("Sounds/Effects/Tutorial/" + clipPath);
 	}
 	
 	public virtual void attatchMyEvents()
@@ -37,7 +39,6 @@ public class TutorialObjective
 	
 	public virtual void onShowMessage()
 	{
-		
 	}
 	
 	public virtual void checkGameplay()
@@ -51,4 +52,5 @@ public class TutorialObjective
 	
 	public bool isBig(){return big;}
 	public string getMessage(){return message;}
+	public AudioClip getClip(){return clip;}
 }

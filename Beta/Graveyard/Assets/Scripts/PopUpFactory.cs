@@ -7,7 +7,7 @@ public class PopUpFactory : MonoBehaviour
 	public static void CreateMessage(string message, int size, Color color, float duration, AudioClip sound)
 	{
 		RemoveCurrentMessage();
-		
+
 		GameObject temp = new GameObject();
 		temp.tag = "PopUp";
 		temp.AddComponent<PopUpMessage>();

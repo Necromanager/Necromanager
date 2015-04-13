@@ -46,7 +46,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eecab055190fb1c49acd6340defdb8bc, type: 3}
   - {fileID: 8300000, guid: 3baf33308d2c1364ca8f08dc850a7cba, type: 3}
   - {fileID: 8300000, guid: d84b5a44efd1c3145929465128472cb6, type: 3}
-  zombieEscaped: []
+  zombieEscaped:
+  - {fileID: 8300000, guid: 8cb6dea7265c5944bb255ffa62d34c3b, type: 3}
+  - {fileID: 8300000, guid: a1c5a46106e5bdc448f29162d2e5539d, type: 3}
+  - {fileID: 8300000, guid: a1c5a46106e5bdc448f29162d2e5539d, type: 3}
+  - {fileID: 8300000, guid: 09ca68daaad38174a81248a4334f4808, type: 3}
   purchaseItem: {fileID: 8300000, guid: 759bf044f0582744cb4b9226ea865300, type: 3}
   soldOut: {fileID: 8300000, guid: c42541c6113fc9540a039cfd0f65d6f4, type: 3}
   enterStore: {fileID: 8300000, guid: 3a992ea9acceb99468cc67f1d9b96c70, type: 3}

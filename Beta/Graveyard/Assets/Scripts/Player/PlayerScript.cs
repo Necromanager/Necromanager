@@ -117,7 +117,7 @@ public class PlayerScript : MonoBehaviour
 			shouldSwing = InputMethod.getAxis("SwingShovel") > 0;
 			break;
 		case InputModeCode.KEYBOARD_AND_MOUSE:
-			shouldSwing = InputMethod.getButton("SwingShovel");
+			shouldSwing = InputMethod.getButtonDown("SwingShovel");
 			break;
 		}
 

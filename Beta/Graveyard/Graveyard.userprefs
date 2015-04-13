@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StateMachine\MainGameState.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ZombieScripts\ZombieScript.cs">
     <Files>
-      <File FileName="Assets\Newspaper.cs" Line="20" Column="2" />
-      <File FileName="Assets\Scripts\StateMachine\MainGameState.cs" Line="393" Column="5" />
+      <File FileName="Assets\Scripts\ZombieScripts\ZombieScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

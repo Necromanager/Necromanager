@@ -12,7 +12,7 @@ public class Coffee : Item
 	void Start () 
 	{
 	}
-	
+
 	void Update () 
 	{
 	}

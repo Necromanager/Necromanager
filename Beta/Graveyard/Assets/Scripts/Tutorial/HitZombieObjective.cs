@@ -7,12 +7,12 @@ public class HitZombieObjective : TutorialObjective {
 	float timesToComplete = 1;
 	
 	
-	public HitZombieObjective(string m, bool b) : base(m, b)
+	public HitZombieObjective(string m, bool b, string fp) : base(m, b, fp)
 	{
 		
 	}
 	
-	
+
 	public override void attatchMyEvents()
 	{
 		base.attatchMyEvents ();
