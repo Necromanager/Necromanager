@@ -183,7 +183,13 @@ public class PlayerScript : MonoBehaviour
 			if (grabbedZombie != null)
 			{
 				grabbedZombie.transform.localPosition = Vector3.zero;
-			}
+            }
+
+            zombieAttachPoint.GetComponent<MeshRenderer>().enabled = false;
+        }
+        else
+        {
+            zombieAttachPoint.GetComponent<MeshRenderer>().enabled = true;
         }
 	}
 	
