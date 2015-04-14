@@ -5,8 +5,10 @@ public class BrainStickHealth : MonoBehaviour
 {
 	[SerializeField] private float health = 100;
 	[SerializeField] private float healthLoss = 1;
-	float nomTime;
-	float nomMaxTime = 2;
+	
+	private Tile parentTile;
+	private float nomTime;
+	private float nomMaxTime = 2;
 
 	void Start () 
 	{
@@ -22,6 +24,11 @@ public class BrainStickHealth : MonoBehaviour
 		{
 			LoseHealth();
 		}
+	}
+	
+	public void SetParentTile(Tile tile)
+	{
+		parentTile = tile;
 	}
 	
 	private bool BeingEaten()
@@ -53,7 +60,15 @@ public class BrainStickHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			GlobalFunctions.PlaySoundEffect(SoundEffectLibrary.finishBrain);
-			DestroyImmediate(gameObject);
+			//DestroyImmediate(gameObject);
+			if (parentTile != null)
+			{
+				parentTile.RemoveBuilding();
+			}
+			else
+			{
+				Destroy(gameObject);
+			}
 		}
 	}
 }

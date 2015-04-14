@@ -33,6 +33,7 @@ public class Selector : MonoBehaviour
 		currentBuilding = new Barricade();
 		currentTile = null;
 		AddBuildings();
+		spaceOpen = false;
 		//canMove = true;
 		playerCamera = Camera.main.GetComponent<SelectorCamera>();
 		SetColor(true);
@@ -66,6 +67,7 @@ public class Selector : MonoBehaviour
 				UpdateMovementKBM();
 				break;
 			}
+			
 
 			if(InputMethod.getButtonDown("Build"))
 			{
@@ -179,7 +181,18 @@ public class Selector : MonoBehaviour
 											  0,
 				                              InputMethod.getAxisRaw("Vertical"));
 
-				Debug.Log ("Input: " + nextPos);
+				Vector3 pos = transform.position;
+				if (((nextPos.x + pos.x) > GlobalValues.upperBounds.x) || 
+				    ((nextPos.x + pos.x) < GlobalValues.lowerBounds.x))
+				{
+					nextPos = new Vector3(0, 0, nextPos.z);
+				}
+				if (((nextPos.z + pos.z) > GlobalValues.upperBounds.y) || 
+				    ((nextPos.z + pos.z) < GlobalValues.lowerBounds.y))
+				{
+					nextPos = new Vector3(nextPos.x, 0, 0);
+				}
+				
 				transform.position += nextPos;
 
 				//check out the new space
@@ -292,7 +305,24 @@ public class Selector : MonoBehaviour
 	
 	private bool CheckCanRemove()
 	{
-		return currentTile.HasBuilding();
+		if (currentTile == null)
+		{
+			return false;
+		}
+	
+		bool hasBuilding = currentTile.HasBuilding();
+		
+		if (hasBuilding)
+		{
+			GameObject building = currentTile.GetBuilding();
+			Spotlight spotLight = building.GetComponent<Spotlight>();
+			if (spotLight != null)
+			{
+				return false;
+			}
+		}
+	
+		return hasBuilding;
 	}
 	
 	private void CheckOnMenu()
@@ -307,6 +337,11 @@ public class Selector : MonoBehaviour
 	private void CheckSpaceOpen()
 	{
 		GetCurrentTile();
+		if (currentTile == null)
+		{
+			return;
+		}
+		
 		if (currentTile.IsGateSpot())
 		{
 			spaceOpen = false;

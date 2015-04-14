@@ -174,6 +174,11 @@ public class Tile : MonoBehaviour
 		return hasBuilding;
 	}
 	
+	public GameObject GetBuilding()
+	{
+		return building;
+	}
+	
 	public void SetBuilding(bool isBuilding)
 	{
 		hasBuilding = isBuilding;
@@ -194,6 +199,12 @@ public class Tile : MonoBehaviour
 		buildingNights = 0;
 		//newBuilding.GetComponent<Building>().SetAttachedTile(this);
 		hasBuilding = true;
+		
+		BrainStickHealth bh = building.GetComponent<BrainStickHealth>();
+		if (bh != null)
+		{
+			bh.SetParentTile(this);
+		}
 	}
 	
 	public float GetBuildingCost()
@@ -210,6 +221,12 @@ public class Tile : MonoBehaviour
 	
 	public void RemoveBuilding()
 	{
+		Spotlight spotLight = building.GetComponent<Spotlight>();
+		if (spotLight != null)
+		{
+			return;
+		}
+	
 		try
 		{
 			Destroy(building);
