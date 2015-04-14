@@ -192,6 +192,7 @@
      <Compile Include="Assets\Scripts\UI\DemoVideo.cs" />
      <Compile Include="Assets\Scripts\UI\DifficultyLRToggle.cs" />
      <Compile Include="Assets\Scripts\UI\FlyingMoneyText.cs" />
+     <Compile Include="Assets\Scripts\UI\InputImage.cs" />
      <Compile Include="Assets\Scripts\UI\InventoryUI.cs" />
      <Compile Include="Assets\Scripts\UI\LRToggle.cs" />
      <Compile Include="Assets\Scripts\UI\MoneyUI.cs" />

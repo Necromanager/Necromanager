@@ -9,6 +9,8 @@ public class StoreState : GameState
 	StoreMenu storeMenu;
 	NewMenu buildMenu;
 
+	float delay = 0;
+
 	public StoreState()
 	{
 		Init ();
@@ -28,17 +30,21 @@ public class StoreState : GameState
 			storeMenu.setNext (buildMenu);
 			storeMenu.isOpen = true;
 		}
+		delay = 1;
 	}
 	
 	public override void UpdateState()
 	{
+		if(delay > 0)
+		delay -= Time.deltaTime;
 	}
 	
 	public override bool ShouldSwitchState()
 	{
-		if(InputMethod.getButtonDown("Continue"))
+		bool tf = (InputMethod.getButtonDown ("Continue") && delay < 0);
+		if(tf)
 			storeMenu.isOpen = false;
-		return InputMethod.getButtonDown("Continue");
+		return tf;
 	}
 	
 	public override GameMode GetGameMode()

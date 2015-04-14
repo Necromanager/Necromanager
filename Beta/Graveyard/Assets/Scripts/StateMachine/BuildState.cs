@@ -9,6 +9,7 @@ public class BuildState : GameState
 
 	NewMenu buildMenu;
 	NewMenu gameMenu;
+	float delay = 0;
 
 	public BuildState()
 	{
@@ -23,7 +24,7 @@ public class BuildState : GameState
 		uiManager.ToggleBuildUI(true);
 		uiManager.ToggleStoreUI(false);
 		*/
-
+		delay = 1;
 		if(firstTime)
 		{
 			firstTime = false;
@@ -41,13 +42,16 @@ public class BuildState : GameState
 	
 	public override void UpdateState()
 	{
+		if (delay > 0)
+			delay -= Time.deltaTime;
 	}
 	
 	public override bool ShouldSwitchState()
 	{
-		if(InputMethod.getButtonDown("Continue"))
+		bool tf = InputMethod.getButtonDown ("Continue") && delay < 0;
+		if(tf)
 			buildMenu.isOpen = false;
-		return InputMethod.getButtonDown("Continue");
+		return tf;
 	}
 	
 	public override GameMode GetGameMode()
