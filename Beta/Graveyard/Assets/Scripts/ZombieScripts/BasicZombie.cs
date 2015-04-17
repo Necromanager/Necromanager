@@ -89,11 +89,23 @@ public class BasicZombie : ZombieScript
 	
 	public override Tile GetGoalTile()
 	{
-		/*GameObject[] spotLights = GameObject.FindGameObjectsWithTag("Spotlight");
-		if (spotLights.Length > 0)
+		GameObject[] screamBoxes = GameObject.FindGameObjectsWithTag("ScreamBox");
+		
+		foreach (GameObject screamBox in screamBoxes)
 		{
-			return homeGrave.GetTile();
-		}*/
+			Vector3 pos = screamBox.transform.position;
+			Vector3 spherePos = new Vector3(pos.x,pos.y-0.7f,pos.z);
+			Collider[] below = Physics.OverlapSphere(spherePos,0.4f);
+			
+			foreach (Collider ob in below)
+			{
+				if (ob.tag == "Floor")
+				{
+					List<Tile> boxTiles = ob.gameObject.GetComponent<Tile>().GetNeighbors();
+					return boxTiles[Random.Range(0,boxTiles.Count)];
+				}
+			}
+		}
 	
 		GameObject[] brainSticks = GameObject.FindGameObjectsWithTag("BrainStick");
 		
@@ -110,24 +122,6 @@ public class BasicZombie : ZombieScript
 					/*List<Tile> brainTiles = ob.gameObject.GetComponent<Tile>().GetNeighbors();
 					return brainTiles[Random.Range(0,brainTiles.Count)];*/
 					return ob.gameObject.GetComponent<Tile>();
-				}
-			}
-		}
-
-		GameObject[] screamBoxes = GameObject.FindGameObjectsWithTag("ScreamBox");
-		
-		foreach (GameObject screamBox in screamBoxes)
-		{
-			Vector3 pos = screamBox.transform.position;
-			Vector3 spherePos = new Vector3(pos.x,pos.y-0.7f,pos.z);
-			Collider[] below = Physics.OverlapSphere(spherePos,0.4f);
-			
-			foreach (Collider ob in below)
-			{
-				if (ob.tag == "Floor")
-				{
-					List<Tile> boxTiles = ob.gameObject.GetComponent<Tile>().GetNeighbors();
-					return boxTiles[Random.Range(0,boxTiles.Count)];
 				}
 			}
 		}
