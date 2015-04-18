@@ -16,7 +16,7 @@ public class DingDong : MonoBehaviour {
 	CanvasGroup cg;
 	public bool offScreen = false;
 
-	public float maxAge = 3;
+	public float maxAge = 3f;
 	public float currentAge;
 	public bool kill = false;
 
@@ -40,13 +40,13 @@ public class DingDong : MonoBehaviour {
 	{
 		if (kill)
 			killChildren ();
+
 		else if (currentAge < maxAge)
 		{
 			currentAge += Time.deltaTime;
-
-			if(Camera.current != null)
+			if(Camera.main != null)
 			{
-				screenSpace = Camera.current.WorldToScreenPoint (target.position);
+				screenSpace = Camera.main.WorldToScreenPoint (target.position);
 				if(checkOffScreen ())
 				{
 					cg.alpha = 1;
@@ -88,11 +88,11 @@ public class DingDong : MonoBehaviour {
 			//Debug.Log ("Offscreen to bottom!");
 			offScreen = true;
 		}
-		else if(screenSpace.y > Screen.height)
+		/*else if(screenSpace.y > Screen.height)
 		{
 			//Debug.Log ("Offscreen to top!");
 			offScreen = true;
-		}
+		}*/
 
 		return offScreen;
 	}

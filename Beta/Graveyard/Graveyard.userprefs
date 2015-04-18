@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Buildings\Spotlight.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Newspaper.cs">
     <Files>
-      <File FileName="Assets\Scripts\Globals\GlobalValues.cs" Line="42" Column="42" />
-      <File FileName="Assets\Scripts\ZombieScripts\ZombieScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ZombieScripts\BasicZombie.cs" Line="103" Column="6" />
-      <File FileName="Assets\Scripts\Buildings\Spotlight.cs" Line="19" Column="3" />
+      <File FileName="Assets\Newspaper.cs" Line="34" Column="8" />
+      <File FileName="Assets\Scripts\UI\Pinkslip.cs" Line="4" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

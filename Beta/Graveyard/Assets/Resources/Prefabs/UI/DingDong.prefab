@@ -216,7 +216,7 @@ MonoBehaviour:
   target: {fileID: 462340}
   wdd: {fileID: 0}
   offScreen: 0
-  maxAge: 3
+  maxAge: 4000
   currentAge: 0
   kill: 0
 --- !u!114 &11411616

@@ -49,8 +49,9 @@ public class FlyingMoneyText : MonoBehaviour {
 
 		rt.localScale = new Vector3 (scaler, scaler, scaler);
 
+		float step = Time.deltaTime * 1000f;
 		rt.position = Vector3.MoveTowards (rt.position,
-		                                   target, 20f);
+		                                   target, step);
 
 		if (dist < 1f)
 		{

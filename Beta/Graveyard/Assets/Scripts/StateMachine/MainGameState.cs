@@ -30,6 +30,7 @@ public class MainGameState : GameState
 	
 	protected ClockUI clock;
 	protected Newspaper newspaper;
+	protected Pinkslip pinkslip;
 
 	protected List<string> paymentNames;
 	protected List<float> paymentValues;
@@ -50,6 +51,7 @@ public class MainGameState : GameState
 
 		clock = uiCanvas.GetComponentInChildren<ClockUI>();
 		newspaper = GameObject.FindGameObjectWithTag ("NewspaperUI").GetComponent<Newspaper> ();
+		pinkslip = GameObject.FindGameObjectWithTag ("PinkslipUI").GetComponent<Pinkslip> ();
 		Init ();
 	}
 	
@@ -275,14 +277,37 @@ public class MainGameState : GameState
 			//GlobalValues.AddMoney(CalculatePay());
 			
 			//clock.SetDraw(false);
+			if(GlobalValues.IsBankrupt())
+			{
+				Debug.Log("AAAARRRRRRRRGGHHHH!");
+				//GAME OVER - Placeholder
+				//uiManager.startMenuTransition ();
+				NewMenu dead = GameObject.FindGameObjectWithTag("DeadUI").GetComponent<GameOverUI>();
+				gameMenu.setNext(dead);
+				
+				lostGame = true;
+				gameMenu.isOpen = false;
+				dead.isOpen = true;
+				return false;
+			}
+
+
 
 			if (GlobalValues.wonGame)
 			{
-				Debug.Log("Won game");
-				Application.LoadLevel(0);
+				if(!pinkslip.hasTriggered)
+				{
+					pinkslip.trigger();
+					return false;
+				}
+				else
+				{
+					Debug.Log("Won game");
+					Application.LoadLevel(0);
+				}
 			}
 
-			if (!GlobalValues.IsBankrupt())
+			if (GlobalValues.IsBankrupt())
 			{
 				Debug.Log ("IIIIIIIIIIIIIIIVE!");
 				GlobalValues.day++;
@@ -295,19 +320,7 @@ public class MainGameState : GameState
 				
 				Reset();
 			}
-			else
-			{
-				Debug.Log("AAAARRRRRRRRGGHHHH!");
-				//GAME OVER - Placeholder
-				//uiManager.startMenuTransition ();
-				NewMenu dead = GameObject.FindGameObjectWithTag("DeadUI").GetComponent<GameOverUI>();
-				gameMenu.setNext(dead);
 
-				lostGame = true;
-				gameMenu.isOpen = false;
-				dead.isOpen = true;
-				return false;
-			}
 			gameMenu.isOpen = false;
 			return true;
 		}

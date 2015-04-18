@@ -42,6 +42,7 @@ TagManager:
   - SoundUI
   - StoreDescription
   - House
+  - PinkslipUI
   layers:
   - Default
   - TransparentFX

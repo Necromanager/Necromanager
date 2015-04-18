@@ -49,7 +49,7 @@ public class PlayerScript : MonoBehaviour
 		inventory = new Inventory();
 		//GetItem(new PickAxe());
 
-		swingEffectDelay = 0.38f;
+		swingEffectDelay = 0.18f;
 		timeToSwingEffect = -1.0f;
 
 		shovel = new Shovel();
