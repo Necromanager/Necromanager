@@ -7,7 +7,7 @@ public class Spotlight : MonoBehaviour
 
 	void Start () 
 	{
-		PopUpFactory.CreateMessage ("You win!", 40, Color.green, 99999, SoundEffectLibrary.winNight);
+		//PopUpFactory.CreateMessage ("You win!", 40, Color.green, 99999, SoundEffectLibrary.winNight);
 		GlobalValues.wonGame = true;
 	}
 

@@ -40,7 +40,7 @@ public class GlobalValues : MonoBehaviour
 	public static int zombiesEscaped = 0;
 	public static int zombiesKilled = 0;
 	public static float returnMoney = 3.50f;
-	public static float escapeMoney = 5.00f;
+	public static float escapeMoney = 3.50f;
 	
 	private static int minutesPassed = 0;
 	
