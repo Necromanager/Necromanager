@@ -169,27 +169,30 @@ public class BasicZombie : ZombieScript
 	
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.tag == "Gum")
+		if(zomStat == ZombieStatus.NORMAL)
 		{
-			Gum gum = col.gameObject.GetComponent<Gum>();
-			if (gum == null)
+			if (col.gameObject.tag == "Gum")
 			{
-				return;
+				Gum gum = col.gameObject.GetComponent<Gum>();
+				if (gum == null)
+				{
+					return;
+				}
+				if (!gum.HasZombie())
+				{
+					gum.StickZombie(this);
+				}
 			}
-			if (!gum.HasZombie())
+			else if (col.gameObject.tag == "Gel")
 			{
-				gum.StickZombie(this);
+				Gel gel = col.gameObject.GetComponent<Gel>();
+				gel.SlipZombie(this);
 			}
-		}
-		else if (col.gameObject.tag == "Gel")
-		{
-			Gel gel = col.gameObject.GetComponent<Gel>();
-			gel.SlipZombie(this);
-		}
-		else if (col.gameObject.tag == "Bell")
-		{
-			Bell bell = col.gameObject.GetComponent<Bell>();
-			bell.RingBell();
+			else if (col.gameObject.tag == "Bell")
+			{
+				Bell bell = col.gameObject.GetComponent<Bell>();
+				bell.RingBell();
+			}
 		}
 	}
 }

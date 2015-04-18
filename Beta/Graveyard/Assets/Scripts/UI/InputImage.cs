@@ -6,7 +6,8 @@ public enum ButtonCodes
 {
 	TOGGLE_LEFT,
 	TOGGLE_RIGHT,
-	USE_ITEM
+	USE_ITEM,
+	ENTER
 }
 
 public class InputImage : MonoBehaviour {
@@ -39,6 +40,9 @@ public class InputImage : MonoBehaviour {
 			break;
 		case ButtonCodes.TOGGLE_RIGHT:
 			imagePath += "ToggleRight";
+			break;
+		case ButtonCodes.ENTER:
+			imagePath += "Enter";
 			break;
 		}
 		Debug.Log (imagePath);

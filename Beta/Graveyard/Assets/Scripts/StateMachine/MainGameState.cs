@@ -208,7 +208,7 @@ public class MainGameState : GameState
 			ActivateZombies();
 		}*/
 		
-		if (Input.GetKeyDown(KeyCode.F10))
+		if (Input.GetKeyDown(KeyCode.F10) && GlobalValues.debugMode)
 		{
 			GlobalValues.EndTime();
 		}
@@ -307,7 +307,7 @@ public class MainGameState : GameState
 				}
 			}
 
-			if (GlobalValues.IsBankrupt())
+			if (!GlobalValues.IsBankrupt())
 			{
 				Debug.Log ("IIIIIIIIIIIIIIIVE!");
 				GlobalValues.day++;

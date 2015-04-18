@@ -41,7 +41,7 @@ public class DingDong : MonoBehaviour {
 		if (kill)
 			killChildren ();
 
-		else if (currentAge < maxAge)
+		else if (currentAge < maxAge) // bell is ringing
 		{
 			currentAge += Time.deltaTime;
 			if(Camera.main != null)
@@ -49,7 +49,8 @@ public class DingDong : MonoBehaviour {
 				screenSpace = Camera.main.WorldToScreenPoint (target.position);
 				if(checkOffScreen ())
 				{
-					cg.alpha = 1;
+					cg.alpha = 1f - (currentAge/maxAge);
+					wdd.setAlpha(0);
 					Vector3 pos = new Vector3(Mathf.Clamp(screenSpace.x, 0, Screen.width),
 					                      Mathf.Clamp(screenSpace.y, 0, Screen.height),
 					                      0);
@@ -58,6 +59,7 @@ public class DingDong : MonoBehaviour {
 				else
 				{
 					cg.alpha = 0;
+					wdd.setAlpha(1f - (currentAge/maxAge));
 				}
 			}
 		}
@@ -65,6 +67,7 @@ public class DingDong : MonoBehaviour {
 		{
 			currentAge = maxAge;
 			cg.alpha = 0;
+			wdd.setAlpha(0);
 		}
 	}
 

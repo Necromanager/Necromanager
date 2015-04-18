@@ -153,7 +153,7 @@ public class PlayerScript : MonoBehaviour
 		
 		if (Time.timeScale != 0)
 		{
-			if (InputMethod.getButton("Fast Forward"))
+			if (InputMethod.getButton("Fast Forward") && GlobalValues.debugMode)
 			{
 				Time.timeScale = 7;
 			}

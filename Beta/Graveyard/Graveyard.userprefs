@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Newspaper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Globals\GlobalValues.cs">
     <Files>
-      <File FileName="Assets\Newspaper.cs" Line="34" Column="8" />
-      <File FileName="Assets\Scripts\UI\Pinkslip.cs" Line="4" Column="37" />
+      <File FileName="Assets\Scripts\Globals\GlobalValues.cs" Line="10" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
