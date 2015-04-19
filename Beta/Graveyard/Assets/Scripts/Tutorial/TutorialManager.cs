@@ -44,7 +44,7 @@ public class TutorialManager : MonoBehaviour {
 
 		//money
 		tutorials.Add (new TutorialObjective("The more zombies you put back in the grave over the course of the night, the more money you'll earn.", true, "Messages/Instructions_11"));
-		tutorials.Add (new TutorialObjective("Money can be spent on various items and building to help keep the zombies in the graveyard.", true, "Messages/Instructions_13"));
+		tutorials.Add (new TutorialObjective("Money can be spent on various items and buildings to help keep the zombies in the graveyard.", true, "Messages/Instructions_13"));
 
 		/*
 		//a zombie spawned! smack it!
@@ -63,6 +63,12 @@ public class TutorialManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+
+		if (InputMethod.getButtonDown ("Quit"))
+		{
+			GlobalValues.setPause(false);
+			Application.LoadLevel(1);
+		}
 
 		numTutorials = tutorials.Count;
 

@@ -176,6 +176,9 @@ public abstract class ZombieScript : MonoBehaviour
 	
 	protected void UpdateStatus()
 	{
+		if (isSpotlight && zomStat == ZombieStatus.NORMAL)
+			zomStat = ZombieStatus.STUNNED;
+
 		if (zomStat == ZombieStatus.DEAD)
 		{
 			return;

@@ -5,10 +5,8 @@ public class GlobalValues : MonoBehaviour
 {
 	//**************************************
 	//    debug
-	//**************************************
-
 	public static bool debugMode = false;
-
+	//**************************************
 
 	private const int START_HOUR = 11;
 	private const int START_MINUTE = 0;

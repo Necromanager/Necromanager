@@ -35,7 +35,7 @@ public class PlayerScript : MonoBehaviour
 	
 	private Vector3 startPos;
 	//private Quaternion startRot;
-
+	private GameStateMachine gsm;
 
 	void Awake () 
 	{
@@ -73,6 +73,11 @@ public class PlayerScript : MonoBehaviour
         //startRot = transform.rotation;
 
 		//animator.transform.localScale = new Vector3(-1,.0f,0);
+	}
+
+	public void setGSM(GameStateMachine g)
+	{
+		gsm = g;
 	}
 	
 	void Update()
@@ -162,14 +167,17 @@ public class PlayerScript : MonoBehaviour
 				Time.timeScale = 1;
 			}
 		}
-		
-		if (InputMethod.getButtonDown("Next Item"))
+
+		if(gsm.GetGameMode() == GameMode.GAME)
 		{
-			CycleInventory(true);
-		}
-		else if (InputMethod.getButtonDown("Prev Item"))
-		{
-			CycleInventory(false);
+			if (InputMethod.getButtonDown("Next Item"))
+			{
+				CycleInventory(true);
+			}
+			else if (InputMethod.getButtonDown("Prev Item"))
+			{
+				CycleInventory(false);
+			}
 		}
 	}
 	

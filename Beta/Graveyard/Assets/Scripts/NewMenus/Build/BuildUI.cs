@@ -12,6 +12,8 @@ public class BuildUI : MonoBehaviour {
 	[SerializeField]
 	Text descText;
 
+	GameStateMachine gsm;
+
 	int selected = 0;
 
 	List<BuildUIElement> elements;
@@ -35,15 +37,19 @@ public class BuildUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if( InputMethod.getButtonDown("Prev Item") )
+		if(gsm == null)
+			gsm = GameObject.FindGameObjectWithTag("Main").GetComponent<Game>().getGSM();
+
+		if (gsm.GetGameMode () == GameMode.BUILD)
 		{
-			move(-1);
-			GlobalFunctions.PlaySoundEffect(SoundEffectLibrary.buildSwitchItem);
-		}
-		if( InputMethod.getButtonDown("Next Item") )
-		{
-			move(1);
-			GlobalFunctions.PlaySoundEffect(SoundEffectLibrary.buildSwitchItem);
+			if (InputMethod.getButtonDown ("Prev Item")) {
+				move (-1);
+				GlobalFunctions.PlaySoundEffect (SoundEffectLibrary.buildSwitchItem);
+			}
+			if (InputMethod.getButtonDown ("Next Item")) {
+				move (1);
+				GlobalFunctions.PlaySoundEffect (SoundEffectLibrary.buildSwitchItem);
+			}
 		}
 	}
 

@@ -28,10 +28,15 @@ public class Game : MonoBehaviour
 
 	public bool isTutorial = false;
 
+	void Awake ()
+	{
+
+	}
 
 	void Start ()
 	{
 		Init(true);
+
 	}
 	
 	private void Init(bool newGame)
@@ -45,6 +50,7 @@ public class Game : MonoBehaviour
 				GlobalValues.money = 400000;
 			else
 				GlobalValues.money = 0;
+
 			GlobalValues.day = 1;
 			GlobalValues.curDiffIncrease = 0;
 			GlobalValues.wonGame = false;
@@ -70,6 +76,8 @@ public class Game : MonoBehaviour
 		GlobalValues.morning = false;
 		showControls = true;
 		GetComponent<LevelGeneration>().GenerateLevel();
+
+		player.setGSM (stateMachine);
 	}
 	
 	private void LoadData()
@@ -267,5 +275,10 @@ public class Game : MonoBehaviour
 		GUI.color = Color.white;
 		
 		GUI.Label(new Rect(Screen.width-textSize.x,0,textSize.x,textSize.y*1.5f),moneyText);
+	}
+
+	public GameStateMachine getGSM()
+	{
+		return stateMachine;
 	}
 }

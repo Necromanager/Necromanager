@@ -164,7 +164,7 @@ public class Inventory
 		{
 			return;
 		}
-	
+		
 		if (cycleForward)
 		{
 			curIndex++;
@@ -181,7 +181,7 @@ public class Inventory
 				curIndex = itemList.Count-1;
 			}
 		}
-		
+		GlobalFunctions.PlaySoundEffect (SoundEffectLibrary.buildSwitchItem);
 		ResetText();
 	}
 }
